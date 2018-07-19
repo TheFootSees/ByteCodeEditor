@@ -1,6 +1,7 @@
 package at.niko.gui;
 
 import at.niko.Niko;
+import com.bulenkov.darcula.DarculaLaf;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,6 +14,12 @@ public class Gui extends JFrame {
     private TabView tabView;
 
     public Gui(){
+        try {
+            UIManager.setLookAndFeel(new DarculaLaf());
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
+
         this.setTitle("ByteCodeEditor by Niko");
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);

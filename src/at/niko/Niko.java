@@ -30,6 +30,7 @@ public class Niko {
                 throwable.printStackTrace();
             }
         }
+        gui.getJarTree().updateTree();
     }
 
     public void saveFile(){

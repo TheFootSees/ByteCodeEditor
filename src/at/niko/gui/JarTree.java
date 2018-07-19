@@ -1,6 +1,7 @@
 package at.niko.gui;
 
 import at.niko.Niko;
+import at.niko.utils.Icons;
 import org.objectweb.asm.tree.ClassNode;
 
 import javax.swing.*;
@@ -22,7 +23,7 @@ import java.util.*;
  */
 
 @SuppressWarnings("serial")
-public class FileNavigationPane extends JInternalFrame {
+public class JarTree extends JInternalFrame {
 
     /**
      * The orginal source is from the ByteCodeViewer maintained by Konloch
@@ -34,7 +35,7 @@ public class FileNavigationPane extends JInternalFrame {
     JButton open = new JButton("+");
     JButton close = new JButton("-");
 
-    MyTreeNode treeRoot = new MyTreeNode("Loaded Files:");
+    MyTreeNode treeRoot = new MyTreeNode("Files:");
     MyTree tree = new MyTree(treeRoot);
     final String quickSearchText = "Quick file search (no file extension)";
     final JTextField quickSearch = new JTextField(quickSearchText);
@@ -132,11 +133,10 @@ public class FileNavigationPane extends JInternalFrame {
         }
     };
 
-    public FileNavigationPane() {
-        super("ClassNavigation");
+    public JarTree() {
+        super("Jar Tree");
         tree.setRootVisible(false);
         tree.setShowsRootHandles(true);
-        quickSearch.setForeground(Color.gray);
         setTitle("Files");
 
         this.open.addActionListener(new ActionListener() {
@@ -252,8 +252,11 @@ public class FileNavigationPane extends JInternalFrame {
     public void updateTree() {
         try {
             treeRoot.removeAllChildren();
-
             MyTreeNode root = new MyTreeNode(Niko.getInstance().getJarFile().getFile().getName());
+            treeRoot.add(root);
+            ImageRenderer renderer = new ImageRenderer();
+            tree.setCellRenderer(renderer);
+
             if (!Niko.getInstance().getJarFile().getContent().classes.isEmpty()) {
                 for (ClassNode c : Niko.getInstance().getJarFile().getContent().classes.values()) {
                     String name = c.name;
@@ -354,27 +357,6 @@ public class FileNavigationPane extends JInternalFrame {
         }
 
         StringMetrics m = null;
-
-        @Override
-        public void paint(final Graphics g) {
-            try {
-                super.paint(g);
-                if (m == null) {
-                    m = new StringMetrics((Graphics2D) g);
-                }
-                if (treeRoot.getChildCount() < 1) {
-                    g.setColor(new Color(0, 0, 0, 100));
-                    g.fillRect(0, 0, getWidth(), getHeight());
-                    g.setColor(Color.white);
-                    String s = "Drag class/jar/zip/APK/DEX here";
-                    g.drawString(s,
-                            ((int) ((getWidth() / 2) - (m.getWidth(s) / 2))),
-                            getHeight() / 2);
-                }
-            } catch (java.lang.InternalError | java.lang.NullPointerException e) {
-
-            }
-        }
     }
 
     public class MyTreeNode extends DefaultMutableTreeNode {
@@ -396,6 +378,9 @@ public class FileNavigationPane extends JInternalFrame {
 
         @SuppressWarnings("unchecked")
         private void recursiveSort(final MyTreeNode node) {
+            if(node.children == null){
+                return;
+            }
             Collections.sort(node.children, nodeComparator);
             final Iterator<MyTreeNode> it = node.children.iterator();
             while (it.hasNext()) {
@@ -496,6 +481,7 @@ public class FileNavigationPane extends JInternalFrame {
      */
     public class ImageRenderer extends DefaultTreeCellRenderer {
 
+        @Override
         public Component getTreeCellRendererComponent(
                 JTree tree,
                 Object value,
@@ -505,85 +491,29 @@ public class FileNavigationPane extends JInternalFrame {
                 int row,
                 boolean hasFocus) { //called every time there is a pane update, I.E. whenever you expand a folder
 
-            Component ret = super.getTreeCellRendererComponent(tree, value,
+            super.getTreeCellRendererComponent(tree, value,
                     selected, expanded, leaf, row, hasFocus);
 
-            if (value != null && value instanceof MyTreeNode) {
+            if (value instanceof MyTreeNode) {
                 MyTreeNode node = (MyTreeNode) value;
                 String name = node.toString().toLowerCase();
 
                 if (name.endsWith(".jar")) {
-                    setIcon(Resources.jarIcon);
-                } else if (name.endsWith(".zip")) {
-                    setIcon(Resources.zipIcon);
-                } else if (name.endsWith(".bat")) {
-                    setIcon(Resources.batIcon);
-                } else if (name.endsWith(".sh")) {
-                    setIcon(Resources.shIcon);
-                } else if (name.endsWith(".cs")) {
-                    setIcon(Resources.csharpIcon);
-                } else if (name.endsWith(".c") || name.endsWith(".cpp") || name.endsWith(".h")) {
-                    setIcon(Resources.cplusplusIcon);
-                } else if (name.endsWith(".apk") || name.endsWith(".dex")) {
-                    setIcon(Resources.androidIcon);
+                    //setIcon(Resources.jarIcon);
                 } else if (name.endsWith(".png") || name.endsWith(".jpg") || name.endsWith(".jpeg") || name.endsWith(".bmp") || name.endsWith(".gif")) {
-                    setIcon(Resources.imageIcon);
+                    //setIcon(Resources.imageIcon);
                 } else if (name.endsWith(".class")) {
-                    setIcon(Resources.classIcon);
+                    setIcon(Icons.CLASS_ICON);
                 } else if (name.endsWith(".java")) {
-                    setIcon(Resources.javaIcon);
+                    setIcon(Icons.CLASS_ICON);
                 } else if (name.endsWith(".txt") || name.endsWith(".md")) {
-                    setIcon(Resources.textIcon);
-                } else if (name.equals("decoded resources")) {
-                    setIcon(Resources.decodedIcon);
-                } else if (name.endsWith(".properties") || name.endsWith(".xml") || name.endsWith(".mf") || name.endsWith(".config") || name.endsWith(".cfg")) {
-                    setIcon(Resources.configIcon);
-                } else if (node.getChildCount() <= 0) { //random file
-                    setIcon(Resources.fileIcon);
-                } else { //folder
-                    ArrayList<TreeNode> nodes = new ArrayList<TreeNode>();
-                    ArrayList<TreeNode> totalNodes = new ArrayList<TreeNode>();
-
-                    nodes.add(node);
-                    totalNodes.add(node);
-
-                    boolean isJava = false;
-                    boolean finished = false;
-
-                    while (!finished) { //may cause a clusterfuck with huge files
-                        if (nodes.isEmpty())
-                            finished = true;
-                        else {
-                            TreeNode treeNode = nodes.get(0);
-                            nodes.remove(treeNode);
-                            int children = treeNode.getChildCount();
-                            if (children >= 1)
-                                for (int i = 0; i < children; i++) {
-                                    TreeNode child = treeNode.getChildAt(i);
-
-                                    if (!totalNodes.contains(child)) {
-                                        nodes.add(child);
-                                        totalNodes.add(child);
-                                    }
-
-                                    if (child.toString().endsWith(".class"))
-                                        isJava = true;
-                                }
-
-                            if (isJava)
-                                nodes.clear();
-                        }
-                    }
-
-                    if (isJava)
-                        setIcon(Resources.packagesIcon);
-                    else {
-                        setIcon(Resources.folderIcon);
-                    }
+                    setIcon(Icons.FILE_ICON);
+                } else {
+                    setIcon(Icons.PACKAGE_ICON);
                 }
             }
 
-            return ret;
+            return this;
         }
     }
 }

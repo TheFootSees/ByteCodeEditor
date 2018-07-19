@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9f84716-bdf4-45fb-9474-bcb337bfc4e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/niko/gui/JarTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/niko/gui/TabView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/niko/jar/JarFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/niko/jar/JarFileChoosers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/niko/utils/Icons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/IdeaIconPack.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ByteCodeEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ByteCodeEditor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Idea11Icons.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/Niko.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/Niko.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/gui/Gui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/gui/Gui$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/gui/Gui$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/gui/Gui$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/gui/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteCodeEditor/at/niko/gui/Gui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/niko/Niko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/niko/Niko.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/niko/gui/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/niko/gui/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/niko/gui/JarTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/niko/gui/JarTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/niko/utils/Icons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/niko/utils/Icons.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,17 +31,18 @@
       <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/at/niko/gui/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="983">
-              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="-161">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#977#978#0" expanded="true" />
                 <element signature="e#1027#1028#0" expanded="true" />
                 <element signature="e#1192#1193#0" expanded="true" />
                 <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#1851#1852#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
-                <element signature="e#1916#1917#0" expanded="true" />
+                <element signature="e#2014#2015#0" expanded="true" />
+                <element signature="e#2044#2045#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2109#2110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,30 +51,10 @@
       <file leaf-file-name="JarTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/at/niko/gui/JarTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="569" column="21" lean-forward="true" selection-start-line="569" selection-start-column="21" selection-end-line="569" selection-end-column="21" />
+            <state relative-caret-position="202">
+              <caret line="505" column="38" lean-forward="true" selection-start-line="505" selection-start-column="38" selection-end-line="505" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#227#254#0" expanded="true" />
-                <element signature="e#1006#5456#0" expanded="true" />
-                <element signature="e#3164#3194#1" expanded="true" />
-                <element signature="e#5455#5456#0" expanded="true" />
-                <element signature="e#6442#6632#0" expanded="true" />
-                <element signature="e#6631#6632#0" expanded="true" />
-                <element signature="e#9617#9618#0" expanded="true" />
-                <element signature="e#9665#9666#0" expanded="true" />
-                <element signature="e#13037#13066#0" expanded="true" />
-                <element signature="e#15113#15114#0" expanded="true" />
-                <element signature="e#15145#15146#0" expanded="true" />
-                <element signature="e#15247#15248#0" expanded="true" />
-                <element signature="e#15305#15306#0" expanded="true" />
-                <element signature="e#15335#15336#0" expanded="true" />
-                <element signature="e#15378#15379#0" expanded="true" />
-                <element signature="e#15389#15419#0" expanded="true" />
-                <element signature="e#16464#16465#0" expanded="true" />
-                <element signature="e#16508#16509#0" expanded="true" />
-                <element signature="e#21179#21189#0" expanded="true" />
-                <element signature="e#21259#21269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +63,11 @@
       <file leaf-file-name="Icons.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/at/niko/utils/Icons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="221">
+              <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +75,8 @@
       <file leaf-file-name="Niko.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/at/niko/Niko.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
+            <state relative-caret-position="219">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,6 +93,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>openFile</find>
+      <find>openclass</find>
+      <find>class/jar</find>
+      <find>updatetre</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -117,9 +110,10 @@
         <option value="$PROJECT_DIR$/src/at/niko/jar/JarFileChoosers.java" />
         <option value="$PROJECT_DIR$/src/at/niko/jar/JarFile.java" />
         <option value="$PROJECT_DIR$/src/at/niko/gui/TabView.java" />
-        <option value="$PROJECT_DIR$/src/at/niko/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/at/niko/Niko.java" />
         <option value="$PROJECT_DIR$/src/at/niko/gui/JarTree.java" />
+        <option value="$PROJECT_DIR$/src/at/niko/gui/Gui.java" />
+        <option value="$PROJECT_DIR$/src/at/niko/utils/Icons.java" />
       </list>
     </option>
   </component>
@@ -146,6 +140,11 @@
             <path>
               <item name="ByteCodeEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ByteCodeEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ByteCodeEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ByteCodeEditor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -159,7 +158,7 @@
               <item name="ByteCodeEditor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="niko" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,8 +170,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,6 +234,9 @@
       <listeners />
     </configuration>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -257,15 +260,15 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5037147" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.32986626" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49752474" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.50247526" side_tool="true" weight="0.24964234" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970282" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39970282" />
       <window_info id="Favorites" sideWeight="0.50247526" side_tool="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -368,67 +371,191 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/com/bulenkov/idea/Idea11IconPack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-941">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rsc/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/fileTypes/java@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/fileTypes/javaClass.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/fileTypes/javaOutsideSource.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/fileTypes/java.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/fileTypes/text.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/com/jetbrains/django/modelClass.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/com/jetbrains/mako/mako.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/advice_dark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/parameter.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/jarDirectory.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/folder@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/jarDirectory_dark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/method.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/ppLib.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/nodes/package.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/icons/FileType_cpp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/icons/view_dark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Idea11Icons.jar!/idea11/fileTypes/facesConfig.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/VectorIconsPack.jar!/cn/robin/vectorIconPack/FontIcon.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/static@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/interface.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/folder.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/classInitializer.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/abstractClass.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/fileTypes/unknown.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/fileTypes/text.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/ppLib.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/ppJar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/fileTypes/java.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/fileTypes/javaClass.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/package.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/objectBrowser/flattenPackages.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/com/intellij/ide/ui/laf/icons/darcula/checkBox.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/class@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IdeaIconPack.jar!/iconpack_2018_1/nodes/class.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/niko/Niko.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="e#7312#7313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/javax/swing/JLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="376" column="16" selection-start-line="376" selection-start-column="16" selection-end-line="376" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/at/niko/gui/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="-161">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#977#978#0" expanded="true" />
             <element signature="e#1027#1028#0" expanded="true" />
             <element signature="e#1192#1193#0" expanded="true" />
             <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/niko/Niko.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2044#2045#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2109#2110#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/at/niko/gui/JarTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="569" column="21" lean-forward="true" selection-start-line="569" selection-start-column="21" selection-end-line="569" selection-end-column="21" />
+        <state relative-caret-position="202">
+          <caret line="505" column="38" lean-forward="true" selection-start-line="505" selection-start-column="38" selection-end-line="505" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#227#254#0" expanded="true" />
-            <element signature="e#1006#5456#0" expanded="true" />
-            <element signature="e#3164#3194#1" expanded="true" />
-            <element signature="e#5455#5456#0" expanded="true" />
-            <element signature="e#6442#6632#0" expanded="true" />
-            <element signature="e#6631#6632#0" expanded="true" />
-            <element signature="e#9617#9618#0" expanded="true" />
-            <element signature="e#9665#9666#0" expanded="true" />
-            <element signature="e#13037#13066#0" expanded="true" />
-            <element signature="e#15113#15114#0" expanded="true" />
-            <element signature="e#15145#15146#0" expanded="true" />
-            <element signature="e#15247#15248#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15335#15336#0" expanded="true" />
-            <element signature="e#15378#15379#0" expanded="true" />
-            <element signature="e#15389#15419#0" expanded="true" />
-            <element signature="e#16464#16465#0" expanded="true" />
-            <element signature="e#16508#16509#0" expanded="true" />
-            <element signature="e#21179#21189#0" expanded="true" />
-            <element signature="e#21259#21269#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/at/niko/utils/Icons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="221">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
