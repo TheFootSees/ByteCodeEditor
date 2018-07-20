@@ -246,7 +246,7 @@ public class JarTree extends JInternalFrame {
     }
 
     public void openFileToWorkSpace(String name, byte[] contents) {
-        Niko.getInstance().openReource(name, contents);
+        Niko.getInstance().openResource(name, contents);
     }
 
     public void updateTree() {

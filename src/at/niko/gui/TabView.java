@@ -8,25 +8,35 @@ import java.awt.*;
 public class TabView extends JPanel {
 
     private JTabbedPane tabPane;
-    private JPanel content;
+    private InfoView infoView;
+    private FieldsView fieldsView;
+    private OpcodesView opcodesView;
 
-    private
+    private JScrollPane scrollPaneOpcodes;
+    private JScrollPane scrollPaneFields;
 
     public TabView(){
         this.setLayout(new BorderLayout());
         tabPane = new JTabbedPane();
 
-        tabPane.addTab("Info", new JPanel());
-        tabPane.addTab("Opcodes", new JPanel());
-        tabPane.addTab("Decompiled", new JPanel());
+        infoView = new InfoView();
+        fieldsView = new FieldsView();
+        opcodesView = new OpcodesView();
 
-        content = new JPanel();
-        this.add(tabPane, BorderLayout.NORTH);
-        this.add(content, BorderLayout.CENTER);
+        scrollPaneFields = new JScrollPane(fieldsView);
+        scrollPaneOpcodes = new JScrollPane(opcodesView);
+
+        tabPane.addTab("Info", infoView);
+        tabPane.addTab("Opcodes", scrollPaneOpcodes);
+        tabPane.addTab("Decompiled", new JPanel());
+        tabPane.addTab("Fields", scrollPaneFields);
+
+        this.add(tabPane, BorderLayout.CENTER);
     }
 
     public void update(ClassNode cn){
-
+        infoView.update(cn);
+        fieldsView.update(cn);
+        opcodesView.update(cn);
     }
-
 }

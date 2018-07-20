@@ -59,10 +59,10 @@ public class Niko {
     }
 
     public void openClassNode(ClassNode node) {
-
+        gui.getTabView().update(node);
     }
 
-    public void openReource(String name, byte[] data){
+    public void openResource(String name, byte[] data){
 
     }
 }
